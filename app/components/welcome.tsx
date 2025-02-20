@@ -5,6 +5,7 @@ import { IoMenu } from "react-icons/io5";
 import Link from 'next/link';
 import Menu from './menu';
 import { FiX } from 'react-icons/fi';
+import Image from 'next/image';
 
 const Welcome = () => {
   const [MenuVisible, setMenuVisible] = useState(false);
@@ -22,10 +23,19 @@ const Welcome = () => {
 
 
           <div className='flex justify-between text-white text-lg font-bold p-2'>
-           <button className='hover:underline rounded-sm w-auto 
+           <button className='hover:underline rounded-sm w-auto hidden
             max-sm:px-2 h-8 border-2 max-sm:text-sm sm:px-5'>
              IKYS
            </button>
+
+         
+
+         
+            <div>
+              <Image src={'/image3.jpeg'} width={500} height={800}  alt='projects' 
+              className='w-20 h-12 rounded-lg' />
+            </div>
+
           
            <Link href={{pathname:'/services'}}>
            <button className='max-sm:hidden  hover:underline  rounded-sm w-auto 
@@ -48,6 +58,9 @@ const Welcome = () => {
            h-auto '>Contact Us
            </button></Link>
 
+           
+
+
 
            <div onClick={closeMenu}> {MenuVisible && (<Menu /> )}</div>
 
@@ -59,6 +72,14 @@ const Welcome = () => {
               <IoMenu size={32} className='pb-1'/>  )}
               </span>
            </button>
+
+
+         
+           <div className='max-lg:hidden rounded-lg border-2 border-black'>
+              <Image src={'/image1.jpeg'} width={500} height={800}  alt='projects' 
+              className='w-20 h-12 rounded-lg max-lg:hidden' />
+            </div>
+
 
         </div>
 

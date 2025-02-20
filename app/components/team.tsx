@@ -24,11 +24,11 @@ const Team = () => {
              </div>
             
              <p className='text-sm'>
-             Our CEO, Imran Yusuf, is a highly skilled and accomplished professional 
+             Our CEO, Imrana Yusuf Saleh, is a highly skilled and accomplished professional 
              architect with a proven track record of success. With extensive real-world 
              experience, he has led the design and construction of a diverse range of residential, 
              industrial, and commercial projects across Nigeria. As a certified and qualified architect,
-             Imran Yusuf combines technical expertise  with innovative solutions to deliver exceptional 
+             Imrana  combines technical expertise  with innovative solutions to deliver exceptional 
              results.</p>
 
              <a href="mailto:ikysmultiprojectltd@gmail.com" >
