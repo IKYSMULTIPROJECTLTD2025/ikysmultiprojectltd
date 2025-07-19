@@ -1039,21 +1039,6 @@ const Projects = () => {
            </div>
           </h1>
 
-          {/* ddddddddd */}
-
-        <h1 className='relative bg-gradient-to-b from-orange-950 to-lime-950
-          hover:bg-black text-white font-normal w-full p-2 h-96  rounded-xl max-sm:w-full '>
-
-           <div className='grid grid-cols-1 w-full h-full'>
-            <div className='flex justify-center '>
-              <Image src={'/image01.png'} width={500} height={800}  alt='projects' 
-              className='flex justify-center w-auto  h-[368px] rounded-lg' />
-            </div>
-
-           </div>
-          </h1>
-
-          
         <h1 className='relative bg-gradient-to-b from-orange-950 to-lime-950
           hover:bg-black text-white font-normal w-full p-2 h-96  rounded-xl max-sm:w-full '>
 
@@ -1182,19 +1167,8 @@ const Projects = () => {
 
            </div>
           </h1>
-
-
-        <h1 className='relative bg-gradient-to-b from-orange-950 to-lime-950
-           hover:bg-black text-white font-normal w-full p-2 h-96 rounded-xl max-sm:w-full'>
-
-          <div className='grid grid-cols-1 w-full h-full'>
-          <div className='flex justify-center'>
-          <video src="/video1.mp4" width="500"  height="368"
-           className='flex justify-center w-auto h-[368px] rounded-lg' controls
-           autoPlay loop  muted /> </div> </div>
-        </h1>
          
-         
+        
           </div>
    
          </div>
