@@ -81,11 +81,11 @@ export const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center">
                 <Phone className="w-4 h-4 text-amber-400 mr-3 flex-shrink-0" />
-                <span>{COMPANY_INFO.phone}</span>
+                <a href="tel:+2348137338938"><span>{COMPANY_INFO.phone}</span> </a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-4 h-4 text-amber-400 mr-3 flex-shrink-0" />
-                <span className="truncate">{COMPANY_INFO.email}</span>
+                <a href="mailto:ikysmultiprojectltd@gmail.com"><span className="truncate">{COMPANY_INFO.email}</span></a>
               </li>
                <li className="flex items-start">
                 <MapPin className="w-4 h-4 text-amber-400 mr-3 mt-1 flex-shrink-0" />

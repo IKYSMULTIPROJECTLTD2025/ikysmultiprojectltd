@@ -45,7 +45,7 @@ const COMPANY_INFO = {
 
 const PROJECTS_DATA: Project[] = [
   {
-    id: 'p1', name: 'Central Business Tower', category: 'Commercial', status: 'Completed', date: '2023',
+    id: 'p1', name: 'IKYS Grand Crown Waterfront', category: 'Commercial', status: 'Completed', date: '2023',
     description: 'A 25-story state-of-the-art commercial complex featuring sustainable energy systems and intelligent building management.',
     image:'/images/main-project.png'
     

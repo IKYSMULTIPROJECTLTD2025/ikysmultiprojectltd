@@ -222,14 +222,14 @@ export const Projects = () => {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
                   key={project.id} 
-                  className="group bg-white border border-neutral-200 cursor-pointer overflow-hidden shadow-sm 
-                  hover:shadow-xl transition-all"
+                  className="group bg-white border  border-neutral-200 cursor-pointer overflow-hidden shadow-sm 
+                  hover:shadow-xl transition-all rounded-2xl"
                   onClick={() => setSelectedProject(project)}
                 >
                   <div className="relative overflow-hidden">
 
                     <Image src={`/${project.images[0]}`} alt={project.name} width={500} height={375}
-                    className="w-full h-full object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-700"/>
+                    className="w-full h-full p-2 rounded-2xl object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-700"/>
 
                     <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 text-xs font-bold 
                     uppercase tracking-widest text-neutral-900">

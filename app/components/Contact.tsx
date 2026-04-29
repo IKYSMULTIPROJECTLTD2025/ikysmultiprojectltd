@@ -47,7 +47,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-neutral-900 mb-1 uppercase tracking-widest text-sm">Phone</h4>
-                  <p className="text-neutral-600">{COMPANY_INFO.phone}</p>
+                  <a href="tel:+2348137338938"><p className="text-neutral-600">{COMPANY_INFO.phone}</p></a>
                 </div>
               </div>
               <div className="flex items-start">
@@ -56,7 +56,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-neutral-900 mb-1 uppercase tracking-widest text-sm">Email</h4>
-                  <p className="text-neutral-600">{COMPANY_INFO.email}</p>
+                  <a href="mailto:ikysmultiprojectltd@gmail.com"><p className="text-neutral-600">{COMPANY_INFO.email}</p></a>
                 </div>
               </div>
 
