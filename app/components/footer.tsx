@@ -1,82 +1,105 @@
-import React from 'react'
-import { BsFacebook } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa";
-import { AiFillTikTok } from "react-icons/ai";
+'use client';
+import { Phone, Mail, MapPin, Building, ExternalLink,  } from 'lucide-react';
 
-const Footer = () => {
+const COMPANY_INFO = {
+  name: 'IKYS Multi Project Ltd',
+  ceo: 'Arc. Imran Yusif Saleh (Imran Khan)',
+  email: 'ikysmultiprojectltd@gmail.com',
+  phone: '+234 813 733 8938',
+  location: 'No. 609 Kofar Ruwa A. Kano State 700252.',
+  mission: 'To redefine architectural excellence in Nigeria and beyond by delivering innovative, sustainable, and culturally resonant design solutions.',
+  vision: 'To be the premier architectural and construction management firm in Africa, known for shaping the skylines of tomorrow.',
+};
+
+export const Footer = () => {
   return (
-    <div>
-    <div className='w-full h-auto  bg-gradient-to-b from-blue-600  to-green-700 '>
-        <div> 
-          <div className='grid lg:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-5 p-5 '>
-          <div className='flex justify-center bg-gradient-to-b from-slate-950 to-black gap-4
-           w-full p-5 min-h-40 rounded-xl max-sm:w-full text-blue-500 font-normal'>
-
-          <div className=' flex flex-col gap-1  flex-wrap'>
-          <div className='flex flex-row'>
-               <p className='text-lg text-white'>Follow us on social media</p>
-             </div>
-
-             
-             <a 
-             href="https://www.facebook.com/profile.php?id=100064043647503" 
-             target="_blank" rel="noopener noreferrer">
-             <span className='flex flex-row justify-center text-sm mt-1 '>
-              <BsFacebook size={20} className=' text-white mx-2' /> 
-              <p>Follow us on facebook</p></span></a>
-
-             
-              <a href="https://www.tiktok.com/@arc_ikys001?_r=1&_d=e2be7ah698cmki&sec_uid=MS4wLjABAAAAUZpIH8sePUuKLihfvwbuHZ2ZmRAih1_Oo4_O53GQE5eoJBP1BeHtZDQFLLZPPaBt&share_author_id=7111413465508955141&sharer_language=en&source=h5_m&u_code=e2be7l59d33d51&timestamp=1739831247&user_id=7111413465508955141&sec_user_id=MS4wLjABAAAAUZpIH8sePUuKLihfvwbuHZ2ZmRAih1_Oo4_O53GQE5eoJBP1BeHtZDQFLLZPPaBt&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7458933835179394821&share_link_id=e86fe894-8f9c-4710-99e0-f0c71da43f6d&share_app_id=1233&ugbiz_name=ACCOUNT&social_share_type=5&enable_checksum=1" 
-              target="_blank" rel="noopener noreferrer">
-             <span className='flex flex-row justify-center text-sm mt-1 ml-1'>
-             <AiFillTikTok size={20} className=' text-white mx-2' /> 
-             <p>Follow us on our tiktok</p></span></a>
-
-             
-             
-             <a 
-             href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=imran-khan-yusuf-b54981350"
-             target="_blank"  rel="noopener noreferrer">
-             <span className='flex justify-center text-sm mt-1 mr-2'>
-             <FaLinkedin size={20} className=' text-white mx-2' /> 
-             <p>Follow us on linkedIn</p></span></a>
-
-          </div>
-          </div>
-
-          <div className='flex justify-center bg-gradient-to-b from-slate-950 to-black
-           w-full p-5 min-h-40 rounded-xl max-sm:w-full text-blue-600 font-normal'>
-          <div className='flex flex-col'>
-             <p className='flex justify-center text-lg text-white'>Registered Office</p>
-             <p className='flex justify-center text-sm mt-2'>NO. 00, KANO STATE,</p>
-             <p className='flex justify-center text-sm mt-2'>NIGERIA , KANO ,</p>
-             <p className='flex justify-center text-sm mt-2'>KANO STATE, NIGERIA</p>
+    <footer className="bg-neutral-950 text-neutral-300 pt-12 pb-10 border-t border-neutral-900">
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center mb-6">
+              <Building className="w-8 h-8 mr-2 text-amber-500" />
+              <div>
+                <h1 className="text-xl font-extrabold tracking-widest uppercase text-white leading-none">IKYS</h1>
+                <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-neutral-300">Multi Project Ltd</span>
+              </div>
+            </div>
+            <p className="text-sm leading-relaxed mb-6">
+              Redefining architectural excellence and construction management in Nigeria with visionary designs and uncompromising quality.
+            </p>
+            <div className="flex space-x-4">
+               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"><ExternalLink className="w-4 h-4"/></div>
+               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"><ExternalLink className="w-4 h-4"/></div>
+               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"><ExternalLink className="w-4 h-4"/></div>
             </div>
           </div>
 
-          <div className='flex justify-center bg-gradient-to-b from-slate-950 to-black gap-4
-             w-full p-5 min-h-40 rounded-xl max-sm:w-full text-blue-600 font-normal'>
-             <div className=' flex flex-col gap-1  flex-wrap'>
-             <div className='flex flex-row'>
-            <p className='flex justify-center ml-[55px] text-lg text-white'>Contact Us</p>
-             </div>
-             <a href="mailto:ikysmultiprojectltd@gmail.com" >
-             <span className='flex justify-center text-sm mt-1 '>ikysmultiprojectltd@gmail.com</span>
-             </a>
-             <a href="tel:+2348137338938"> 
-             <span className='flex justify-center text-sm mt-1 '>+234 813 733 8938</span>
-             </a>
-             <a href="tel:+2348137338938"> 
-             <span className='flex justify-center text-sm mt-1 '>+234 703 505 5162</span>
-             </a>
-             </div>
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-white font-bold uppercase tracking-widest mb-6 text-sm">Company</h4>
+            <ul className="space-y-3 text-sm">
+
+              <a href={'#about'}><li><button 
+              className="hover:text-amber-500 mb-3 transition-colors">About Us</button></li></a>
+
+              <a href={'#projects'}><li><button 
+              className="hover:text-amber-500 mb-3 transition-colors">Portfolio</button></li></a>
+
+              <a href={'#services'}><li><button 
+              className="hover:text-amber-500 mb-3 transition-colors">Services</button></li></a>
+
+              <a href={'#process'}><li><button 
+              className="hover:text-amber-500 transition-colors">Our Process</button></li></a>
+
+             {/* <a href={'#home'}> <li><button 
+              className="hover:text-amber-500 transition-colors">Licenses & Certifications</button></li></a> */}
+
+            </ul>
           </div>
 
-      </div>
-      </div>
-      </div>
-    </div>
-  )
-}
+          {/* Resources */}
+          <div>
+            <h4 className="text-white font-bold uppercase tracking-widest mb-6 text-sm">Resources</h4>
+            <ul className="space-y-3  text-sm">
 
-export default Footer
+               <a href={'#testimonials'}><li><button  
+              className="hover:text-amber-500 mb-3 transition-colors">Testimonials</button></li></a>
+
+               <a href={'#faqs'}><li><button 
+              className="hover:text-amber-500 mb-3 transition-colors">FAQs</button></li></a>
+
+              <li><button className="hover:text-amber-500 transition-colors">Privacy Policy</button></li>
+              <li><button className="hover:text-amber-500 transition-colors">Terms of Service</button></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-white font-bold uppercase tracking-widest mb-6 text-sm">Contact</h4>
+            <ul className="space-y-4 text-sm">
+              <li className="flex items-center">
+                <Phone className="w-4 h-4 text-amber-400 mr-3 flex-shrink-0" />
+                <span>{COMPANY_INFO.phone}</span>
+              </li>
+              <li className="flex items-center">
+                <Mail className="w-4 h-4 text-amber-400 mr-3 flex-shrink-0" />
+                <span className="truncate">{COMPANY_INFO.email}</span>
+              </li>
+               <li className="flex items-start">
+                <MapPin className="w-4 h-4 text-amber-400 mr-3 mt-1 flex-shrink-0" />
+                <span>{COMPANY_INFO.location}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="pt-8 border-t border-neutral-900 text-center text-xs text-neutral-300 flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; {new Date().getFullYear()} IKYS Multi Project Ltd. All rights reserved.</p>
+          <p className="mt-2 md:mt-0">Designed & Engineered for Production.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};

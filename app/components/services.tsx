@@ -1,210 +1,99 @@
-import React from 'react'
+'use client';
+import { motion } from 'framer-motion';
+import { SectionTitle } from './SectionTitle';
+import { useSEO } from './UseMemo';
+import { Building, CheckCircle, Hammer, PencilRuler, Users,  } from 'lucide-react';
+import { Button } from './Button';
+import Image from 'next/image';
 
-const Services = () => {
-  return (
-    <div>
-
-            
-<div className='h-auto overflow-y-auto   '>
-            <div className='w-full h-auto  bg-gradient-to-b from-sky-500  to-cyan-500 '>
-            <div> 
-     
-         <div className='p-5'> <button className='bg-gradient-to-b from-pink-950
-           to-green-950 w-full text-white text-lg max-sm:text-md  h-12 rounded-lg '>
-                What We Do At Ikys Multi Project Ltd
-          </button></div>
-
-          <div className='grid grid-cols-2 max-md:grid-cols-1 gap-5 p-5 '>
-          <h1 className='relative bg-gradient-to-b from-orange-950 to-lime-950
-           hover:bg-black text-white font-normal
-           w-full p-5 min-h-96  rounded-xl max-sm:w-full '>
-            <p className='text-lg '>Building Planning Services</p>
-
-            <p className='text-xs mt-1'>Architectural Design:</p>
-            <p className='text-xs mt-1'>Creating building designs and plans, 
-              including 2D and 3D modeling.</p>
-
-            <p className='text-xs mt-1'>Structural Engineering:</p>
-            <p className='text-xs mt-1'> Analyzing and designing building structures, 
-              including foundations, beams, and columns.</p>
-
-              <p className='text-xs mt-1'>Project Feasibility Studies: </p>
-            <p className='text-xs mt-1'>Conducting studies to determine the 
-              viability of a construction project.</p>
-           
-             <a href="mailto:ikysmultiprojectltd@gmail.com" >
-            <p className='absolute bottom-[55px]'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-1 '>ikysmultiprojectltd@gmail.com</button>
-             </p></a>
-             
-             <a href="tel:+2348137338938"> 
-            <p className='absolute bottom-1'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-1 '>+234 813 733 8938</button>
-             </p></a>
-
-          </h1>
-
-          <h1 className='relative bg-gradient-to-b from-yellow-950 to-cyan-950
-           font-normal text-white
-           w-full p-5 min-h-96 rounded-xl  max-sm:w-full'>
-           <p className='text-lg '> Building Planning Services</p>
-
-            <p className='text-xs mt-3'>MEP (Mechanical, Electrical, and Plumbing) Design:</p>
-            <p className='text-xs mt-3'> Designing and planning mechanical, electrical, 
-            and plumbing systems.</p>
-
-            <p className='text-xs mt-3'>Quantity Surveying:</p>
-            <p className='text-xs mt-3'> Estimating and managing construction costs, 
-            including preparing bills of quantities.</p>
-           
-            <a href="mailto:ikysmultiprojectltd@gmail.com" >
-            <p className='absolute bottom-[55px]'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-1 '>ikysmultiprojectltd@gmail.com</button>
-             </p></a>
-             
-             <a href="tel:+2348137338938"> 
-            <p className='absolute bottom-1'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-1 '>+234 813 733 8938</button>
-             </p></a>
-           
-          </h1>
-
-          <h1 className='relative bg-gradient-to-b from-slate-950 to-blue-950 w-full  hover:bg-black font-normal text-white
-           min-h-96 p-5 rounded-xl  max-sm:w-full'>
-            <p className='text-lg '>Construction Management</p>
-            
-            <p className='text-xs mt-1'>Project Management:</p>
-            <p className='text-xs mt-1'>Overseeing and coordinating construction projects from start to finish.</p>
-
-            <p className='text-xs mt-1'>Contract Administration:</p>
-            <p className='text-xs mt-1'> Managing contracts with subcontractors, suppliers, and clients.</p>
-
-              <p className='text-xs mt-1'>Site Management: </p>
-            <p className='text-xs mt-1'> Managing construction sites, including supervising workers and ensuring safety.</p>
-
-            <a href="mailto:ikysmultiprojectltd@gmail.com" >
-            <p className='absolute bottom-16'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>ikysmultiprojectltd@gmail.com</button>
-             </p></a>
-             
-             <a href="tel:+2348137338938"> 
-            <p className='absolute bottom-1'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>+234 813 733 8938</button>
-             </p></a>
-             
-          </h1>
-
-          <h1 className='relative
-          bg-gradient-to-b from-red-950 to-green-950 w-full   font-normal text-white
-           min-h-96 p-5 rounded-xl  max-sm:w-full'>
-             <p className='text-lg '>Construction Management</p>
-             
-            <p className='text-xs mt-1'>Quality Control:</p>
-            <p className='text-xs mt-1'>Ensuring that construction work meets quality standards and specifications.</p>
-
-            <p className='text-xs mt-1'>Safety Management:</p>
-            <p className='text-xs mt-1'>  Implementing and enforcing safety protocols on construction sites.</p>
-
-            <p className='text-xs mt-1'>Scheduling and Coordination: </p>
-            <p className='text-xs mt-1'>Creating and managing construction schedules, including 
-              coordinating with subcontractors and suppliers.</p>
-
-              <a href="mailto:ikysmultiprojectltd@gmail.com" >
-            <p className='absolute bottom-16'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>ikysmultiprojectltd@gmail.com</button>
-             </p></a>
-             
-             <a href="tel:+2348137338938"> 
-            <p className='absolute bottom-1'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>+234 813 733 8938</button>
-             </p></a>
-           
-          </h1>
-
-
-          <h1 className='relative bg-gradient-to-b from-slate-950 to-blue-950 w-full  hover:bg-black font-normal text-white
-           min-h-96 p-5 rounded-xl  max-sm:w-full'>
-            <p className='text-lg '>Construction Management</p>
-            
-            <p className='text-xs mt-0.5'>Budgeting and Cost Control: </p>
-            <p className='text-xs'>Managing construction budgets and controlling costs.</p>
-
-            <p className='text-xs mt-0.5'>Risk Management:</p>
-            <p className='text-xs '> Identifying and mitigating risks associated with 
-            construction projects.</p>
-
-            <p className='text-xs mt-0.5'>Commissioning and Handover:</p>
-            <p className='text-xs '> Ensuring that construction projects are completed
-             and handed over to clients.</p>
-
-            <p className='text-xs mt-0.5'>Facility Management: </p>
-            <p className='text-xs '> Providing ongoing maintenance and management services 
-            for completed buildings.</p>
-
-            <a href="mailto:ikysmultiprojectltd@gmail.com" >
-            <p className='absolute bottom-16'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>ikysmultiprojectltd@gmail.com</button>
-             </p></a>
-             
-             <a href="tel:+2348137338938"> 
-            <p className='absolute bottom-1'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>+234 813 733 8938</button>
-             </p></a>
-             
-          </h1>
-
-          <h1 className='relative
-          bg-gradient-to-b from-red-950 to-green-950 w-full   font-normal text-white
-           min-h-96 p-5 max-lg:h-[450px] rounded-xl  max-sm:w-full'>
-             <p className='text-lg '>Additional Services</p>
-             
-            <p className='text-xs mt-0.5'>Construction Supervision:</p>
-            <p className='text-xs '>Providing technical expertise and supervision during construction.</p>
-
-            <p className='text-xs mt-0.5'>Building Information Modeling (BIM):</p>
-            <p className='text-xs '> Creating detailed digital models of buildings and infrastructure.</p>
-
-            <p className='text-xs mt-0.5'>Sustainability Consulting:</p>
-            <p className='text-xs '>Providing advice on sustainable building practices and energy efficiency.</p>
-
-
-            <p className='text-xs mt-0.5'>Dispute Resolution:</p>
-            <p className='text-xs '> Helping to resolve disputes that may arise during construction projects.</p>
-
-            <p className='text-xs mt-0.5'>Training and Development:</p>
-            <p className='text-xs '>Providing training and development programs for construction professionals.</p>
-
-            <a href="mailto:ikysmultiprojectltd@gmail.com" >
-            <p className='absolute bottom-16'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>ikysmultiprojectltd@gmail.com</button>
-             </p></a>
-             
-             <a href="tel:+2348137338938"> 
-            <p className='absolute bottom-1'>
-            <button className='bg-gradient-to-b from-blue-900  to-yellow-900 
-             w-60 h-10 rounded-xl my-3 '>+234 813 733 8938</button>
-             </p></a>
-           
-          </h1>
-          
-          </div>
-   
-         </div>
-        </div>
-      </div>
-    </div>
-  )
+interface Service {
+  id: string;
+  title: string;
+  description: string;
+  icon: React.ElementType;
+  image: string; 
 }
 
-export default Services
+const SERVICES_DATA: Service[] = [
+
+  { id: 's1', title: 'Architectural Design',  
+    description: `Comprehensive design services from conceptualization to detailed working drawings, ensuring aesthetic 
+    brilliance and functional efficiency.`, 
+    icon: PencilRuler,
+    image: '/images/architectural-design.png',
+  },
+
+   
+  { id: 's2', title: 'Construction Management', 
+    description: `End-to-end project oversight, coordinating contractors, managing budgets, and ensuring strict 
+    adherence to timelines and quality standards.`, 
+    icon: Hammer,
+    image: '/images/construction-management.png',
+  },
+  
+  { id: 's3', title: 'Building Planning', 
+    description: `Strategic site analysis, feasibility studies, and master planning for complex residential, commercial, 
+    and industrial developments.`, 
+    icon: Building,
+    image: '/images/building-planning1.png',
+  },
+   
+
+  { id: 's4', title: 'Consulting Services', 
+      description: `Expert advisory on building codes, sustainability practices, material selection, and structural integrity.`, 
+      icon: Users,
+      image: '/images/consulting-services.png',
+  },    
+];    
+
+
+export const Services = () => {
+  useSEO("Our Services", "Architectural design, construction management, and building planning services by IKYS.");
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="w-full pt-24">
+      <section className="bg-neutral-50 py-10 border-b border-neutral-200">
+        <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
+          <SectionTitle title="Professional Services" subtitle="Capabilities" />
+          <p className="text-xl text-neutral-600 leading-relaxed">
+            We provide a holistic suite of architectural and construction services. From the initial sketch to the final coat of paint, our multi-disciplinary team ensures excellence at every phase.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="space-y-24">
+            {SERVICES_DATA.map((service, index) => (
+              <div key={service.id} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
+                <div className="w-full lg:w-1/2">
+                 
+                    <Image src={service.image} width={500} height={800}  alt={service.title} 
+                    className="w-full object-cover rounded-none border-none bg-neutral-900" />
+
+                </div>
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <service.icon className="w-16 h-16 text-amber-600" />
+                  <h2 className="text-3xl font-extrabold text-neutral-900">{service.title}</h2>
+                  <p className="text-lg text-neutral-600 leading-relaxed">{service.description}</p>
+                  <ul className="space-y-3 mt-6">
+                    {[1, 2, 3].map(item => (
+                      <li key={item} className="flex items-start">
+                        <CheckCircle className="w-6 h-6 text-amber-500 mr-3 flex-shrink-0" />
+                        <span className="text-neutral-700">Detailed aspect of {service.title.toLowerCase()} service offering ensuring quality and precision.</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="pt-6">
+                   <a href={'#contact'}> <Button 
+                     variant="outline">Request Consultation</Button></a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </motion.div>
+  );
+};

@@ -1,135 +1,111 @@
-'use client'
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+'use client';
+import { motion } from 'framer-motion';
+import { ImagePlaceholder } from './ImagePlaceHolder';
+import { SectionTitle } from './SectionTitle';
+import { useSEO } from './UseMemo';
+import { Button } from './Button';
+import { Phone, Mail, MapPin,  } from 'lucide-react';
 
-interface FormData {
-  name: string;
-  email: string;
-  reason: string;
-  message: string;
-}
+const COMPANY_INFO = {
+  name: 'IKYS Multi Project Ltd',
+  ceo: 'Arc. Imran Yusif Saleh (Imran Khan)',
+  email: 'ikysmultiprojectltd@gmail.com',
+  phone: '+234 813 733 8938',
+  location: ' No. 609 Kofar Ruwa A. Kano State 700252.',
+  mission: 'To redefine architectural excellence in Nigeria and beyond by delivering innovative, sustainable, and culturally resonant design solutions.',
+  vision: 'To be the premier architectural and construction management firm in Africa, known for shaping the skylines of tomorrow.',
+};
 
-const Contact: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    reason: '',
-    message: '',
-  });
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: FormEvent) => {
+export const Contact = () => {
+  useSEO("Contact Us", "Get in touch with IKYS Multi Project Ltd.");
+  
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    if(!formData.name || !formData.email || !formData.reason || !formData.message ){
-      return (alert('All Fields Are Required'))
-    }
-
-    // Construct the mailto link
-    const mailtoLink = `mailto:ikysmultiprojectltd@gmail.com?subject=${encodeURIComponent(
-      formData.reason
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nReason: ${formData.reason}\nMessage: ${formData.message}`
-    )}`;
-
-    // Redirect to the mailto link
-    window.location.href = mailtoLink;
+    alert("Please use this number to send us a message via WhatsApp:  " + COMPANY_INFO.phone);
   };
 
   return (
-    <div>
-      <div className="bg-cyan-500 max-sm:h-auto pt-5 bg-cover bg-center sm:min-h-screen w-full">
-        <div className="h-auto overflow-y-auto">
-          <div className="flex flex-col text-black pt-5">
-            <div className="flex justify-center text-xl max-sm:text-lg max-md:text-lg font-bold">
-              Contact us here
-            </div>
-
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="w-full pt-12 bg-white">
+      <div className="container mx-auto px-6 lg:px-12 py-12">
+        <SectionTitle title="Get In Touch" subtitle="Contact Us" />
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          {/* Contact Details */}
+          <div className="space-y-12">
             <div>
-              <div className="flex justify-center mt-1">
-                <label className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-8 mt-5 text-sm font-bold">
-                  Write your name here
-                </label>
+              <h3 className="text-2xl font-extrabold text-neutral-900 mb-6">Let's Discuss Your Next Project</h3>
+              <p className="text-neutral-600 leading-relaxed mb-8">
+                Whether you have a clear vision or need expert guidance to start planning, our team is ready to assist you. Reach out via phone, email, or visit our office.
+              </p>
+            </div>
+            
+            <div className="space-y-6">
+              
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-neutral-100 flex items-center justify-center mr-6 flex-shrink-0">
+                  <Phone className="w-5 h-5 text-amber-600" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-neutral-900 mb-1 uppercase tracking-widest text-sm">Phone</h4>
+                  <p className="text-neutral-600">{COMPANY_INFO.phone}</p>
+                </div>
               </div>
-              <div className="flex justify-center">
-                <input
-                  required
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-8 text-lg focus:outline p-1 rounded border border-black"
-                />
-              </div>
-
-              <div className="flex justify-center">
-                <label className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-8 mt-2 text-sm font-bold">
-                  Write your email here
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <input
-                  required
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-8 text-sm focus:outline p-1 rounded border border-black"
-                />
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-neutral-100 flex items-center justify-center mr-6 flex-shrink-0">
+                  <Mail className="w-5 h-5 text-amber-600" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-neutral-900 mb-1 uppercase tracking-widest text-sm">Email</h4>
+                  <p className="text-neutral-600">{COMPANY_INFO.email}</p>
+                </div>
               </div>
 
-              <div className="flex justify-center">
-                <label className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-8 mt-2 text-sm font-bold">
-                  Topic/reason
-                </label>
-              </div>
-              <div className="flex mt-2 justify-center">
-                <input
-                  required
-                  type="text"
-                  name="reason"
-                  value={formData.reason}
-                  onChange={handleChange}
-                  className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-8 text-sm focus:outline p-1 rounded border border-black"
-                />
+               <div className="flex items-start">
+                <div className="w-12 h-12 bg-neutral-100 flex items-center justify-center mr-6 flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-amber-600" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-neutral-900 mb-1 uppercase tracking-widest text-sm">Head Office</h4>
+                  <p className="text-neutral-600">{COMPANY_INFO.location}</p>
+                </div>
               </div>
 
-              <div className="flex justify-center">
-                <label className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-8 mt-2 text-sm font-bold">
-                  Write your statements here
-                </label>
-              </div>
-              <div className="flex justify-center">
-                <textarea
-                  required
-                  id="text"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="lg:w-2/5 max-lg:w-2/3 max-md:w-4/5 max-sm:w-full mx-2 h-40 text-sm focus:outline p-1 rounded border border-black"
-                />
-              </div>
             </div>
 
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                onClick={handleSubmit}
-                className="rounded bg-slate-950 w-80 max-sm:w-4/5 text-white h-7 mt-5 hover:bg-slate-800 mb-20"
-              >
-                Contact Us
-              </button>
+            <div className="w-full  max-sm:hidden h-64 bg-neutral-200 border border-neutral-300 relative overflow-hidden">
+              <ImagePlaceholder text="Interactive Map " className="w-full h-full" />
             </div>
+          </div>
+
+          {/* Form */}
+          <div className="bg-neutral-50 p-8 md:p-12 border border-neutral-200 shadow-sm">
+            <h3 className="text-2xl font-extrabold text-neutral-900 mb-8">Send a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-bold text-neutral-700 uppercase tracking-widest mb-2">First Name</label>
+                  <input type="text" required className="w-full px-4 py-3 bg-white border border-neutral-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-neutral-700 uppercase tracking-widest mb-2">Last Name</label>
+                  <input type="text" required className="w-full px-4 py-3 bg-white border border-neutral-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors" />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-bold text-neutral-700 uppercase tracking-widest mb-2">Email Address</label>
+                <input type="email" required className="w-full px-4 py-3 bg-white border border-neutral-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors" />
+              </div>
+            
+              <div>
+                <label className="block text-sm font-bold text-neutral-700 uppercase tracking-widest mb-2">Message</label>
+                <textarea required rows={5} className="w-full px-4 py-3 bg-white border border-neutral-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors resize-none"></textarea>
+              </div>
+              <Button variant="primary" className="w-full">Submit Message</Button>
+            </form>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default Contact;
