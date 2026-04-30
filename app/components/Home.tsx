@@ -45,7 +45,7 @@ const COMPANY_INFO = {
 
 const PROJECTS_DATA: Project[] = [
   {
-    id: 'p1', name: 'IKYS Grand Crown Waterfront', category: 'Commercial', status: 'Completed', date: '2023',
+    id: 'p1', name: 'IKYS Grand Crown Waterfront Hotel & Resort', category: 'Commercial', status: 'Completed', date: '2023',
     description: 'A 25-story state-of-the-art commercial complex featuring sustainable energy systems and intelligent building management.',
     image:'/images/main-project.png'
     
@@ -130,7 +130,7 @@ export const Home = () => {
 
         <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center md:text-left
          items-center mt-5">
-        <Image src={'/images/main-project.png'} width={500} height={800}  alt='Hero Background Architecture Image' 
+        <Image src={'/projects/logo2.png'} width={500} height={800}  alt='Hero Background Architecture Image' 
           className="w-full h-full object-cover rounded-3xl border-none bg-neutral-900 " />
         </div>
 

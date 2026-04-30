@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const COMPANY_INFO = {
   name: 'IKYS Multi Project Ltd',
-  ceo: 'Arc. Imran Yusif Saleh (Imran Khan)',
+  ceo: 'Arc. Imran Yusuf Saleh (Imran Khan)',
   email: 'ikysmultiprojectltd@gmail.com',
   phone: '+234 813 733 8938',
   location: 'Nigeria',
@@ -26,12 +26,22 @@ export const About = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <SectionTitle title="About IKYS" subtitle="Our Story" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-             <Image src={'/images/team.png'} width={500} height={800}  alt='Company Office / Team'  
+             <Image src={'/projects/logo2.png'} width={500} height={800}  alt='Company Office / Team'  
              className='w-full rounded-lg p- border-2 border-neutral-300 shadow-2xl'/>
             <div className="text-lg text-neutral-600 leading-relaxed space-y-6">
               <p>
-                Founded on the principles of integrity, innovation, and uncompromising quality, <strong>{COMPANY_INFO.name}</strong> has established itself as a cornerstone of architectural and construction excellence in Nigeria.
+                        IKYS MULTI PROJECT LTD is a leading and fast-growing construction company 
+                        specializing in building planning, architectural design, and construction management. 
+                        We provide a broad spectrum of professional services tailored to meet the unique needs of 
+                        clients across residential, commercial, and infrastructure sectors. Our expertise covers 
+                        the entire project lifecycle—from concept development and planning to execution and delivery. 
+                        With a strong commitment to innovation, quality, and sustainability, we deliver solutions 
+                        that align with modern industry standards while ensuring efficiency, durability,
+                         and client satisfaction. Our team combines technical excellence with practical 
+                         experience to transform ideas into outstanding structures.
+
               </p>
+             
               <p>
                 We do not just design buildings; we craft environments that inspire, function seamlessly, and stand the test of time. Our multi-disciplinary approach ensures that every project, regardless of scale, receives the meticulous attention it deserves from conceptualization to final delivery.
               </p>
@@ -55,7 +65,7 @@ export const About = () => {
               
               <div className="space-y-6 text-neutral-600 leading-relaxed text-lg">
                 <p>
-                  Arc. Imran Yusif Saleh, known in the industry as Imran Khan, brings decades of visionary experience to IKYS Multi Project Ltd. His design philosophy marries contemporary global aesthetics with profound local cultural relevance.
+                  Arc. Imran Yusuf Saleh, known in the industry as Imran Khan, brings decades of visionary experience to IKYS Multi Project Ltd. His design philosophy marries contemporary global aesthetics with profound local cultural relevance.
                 </p>
                 <p>
                   Under his leadership, the firm has successfully delivered complex residential, commercial, and public infrastructure projects across Nigeria. Arc. Imran is deeply committed to sustainable architecture and rigorous construction standards, ensuring that every IKYS structure is a testament to durability and elegance.
@@ -85,7 +95,10 @@ export const About = () => {
               <div className="border-l-4 border-amber-500 pl-8">
                 <h3 className="text-3xl font-extrabold mb-6">Our Mission</h3>
                 <p className="text-xl text-neutral-300 font-light leading-relaxed">
-                  {COMPANY_INFO.mission}
+                  {/* {COMPANY_INFO.mission} */}
+                  
+               <Image src={'/projects/mission.png'} width={500} height={800}  alt='Company'  
+                           className='w-full h-full'/>
                 </p>
               </div>
             </FadeIn>
@@ -93,7 +106,10 @@ export const About = () => {
               <div className="border-l-4 border-amber-500 pl-8">
                 <h3 className="text-3xl font-extrabold mb-6">Our Vision</h3>
                 <p className="text-xl text-neutral-300 font-light leading-relaxed">
-                  {COMPANY_INFO.vision}
+                  {/* {COMPANY_INFO.vision} */}
+                  
+               <Image src={'/projects/vision.png'} width={500} height={800}  alt='Company'  
+                           className='w-full h-full'/>
                 </p>
               </div>
             </FadeIn>

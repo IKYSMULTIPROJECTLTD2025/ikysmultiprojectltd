@@ -5,6 +5,7 @@ import { SectionTitle } from './SectionTitle';
 import { useSEO } from './UseMemo';
 import { Button } from './Button';
 import { Phone, Mail, MapPin,  } from 'lucide-react';
+import Image from 'next/image';
 
 const COMPANY_INFO = {
   name: 'IKYS Multi Project Ltd',
@@ -74,6 +75,10 @@ export const Contact = () => {
 
             <div className="w-full  max-sm:hidden h-64 bg-neutral-200 border border-neutral-300 relative overflow-hidden">
               <ImagePlaceholder text="Interactive Map " className="w-full h-full" />
+
+               {/* <Image src={'/projects/logo2.png'} width={500} height={800}  alt='Company'  
+                           className='w-full h-full'/> */}
+
             </div>
           </div>
 

@@ -1,5 +1,6 @@
 'use client';
 import { Phone, Mail, MapPin, Building, ExternalLink,  } from 'lucide-react';
+import Image from 'next/image';
 
 const COMPANY_INFO = {
   name: 'IKYS Multi Project Ltd',
@@ -27,12 +28,60 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-6">
-              Redefining architectural excellence and construction management in Nigeria with visionary designs and uncompromising quality.
+              Redefining architectural excellence and construction management in Nigeria 
+              with visionary designs and uncompromising quality.
             </p>
             <div className="flex space-x-4">
-               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"><ExternalLink className="w-4 h-4"/></div>
-               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"><ExternalLink className="w-4 h-4"/></div>
-               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"><ExternalLink className="w-4 h-4"/></div>
+
+              <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
+                 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
+                 {/* <ExternalLink className="w-4 h-4"/> */}
+                 <a href={'#home'}>
+                 <Image src={'/projects/logo4.jpeg'} width={50} height={800}  alt='Ikys'  
+                 className='w-8 h-8 rounded-full bord er border-white'/></a>
+
+              </div>
+             
+              <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
+                hover:bg-amber-600  hover:text-white transition-colors cursor-pointer">
+                <a href={'https://www.tiktok.com/@arc_ikys001?is_from_webapp=1&sender_device=pc'} 
+                target="_blank" rel="noopener noreferrer">
+                <Image src={'/images/tiktok.png'} width={50} height={800}  alt='TikTok'  
+                className='w-8 h-8 rounded-full'/></a>
+              </div>
+             
+               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
+                hover:bg-amber-600  hover:text-white transition-colors cursor-pointer">
+                 <a href={'https://www.instagram.com/@arc_ikys001/?igshid=YmMyMTA%3D'} 
+                 target="_blank" rel="noopener noreferrer">
+                <Image src={'/images/instagram.png'} width={50} height={800}  
+                alt='Instagram' className='w-8 h-8 rounded-full'/></a>
+              </div>
+          
+              {/* <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
+                hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
+                <a href={'https://x.com/@ikysmulti_projectltd'} 
+                target="_blank" rel="noopener noreferrer">
+                <Image src={'/images/twitter.png'} width={50} height={800}  
+                alt='Twitter' className='w-8 h-8 rounded-full'/></a>
+              </div> */}
+            
+              <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
+                hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
+                <a href={'https://www.facebook.com/imran.khan.yusuf.991059'}
+                target="_blank" rel="noopener noreferrer">
+                <Image src={'/images/facebook.png'} width={50} height={800}  
+                alt='Facebook' className='w-8 h-8 rounded-full'/></a>
+              </div>
+            
+              <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
+                hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
+                <a href={'https://wa.me/2348137338938'}
+                target="_blank" rel="noopener noreferrer">
+                <Image src={'/images/whatsapp.png'} width={50} height={800}  
+                alt='WhatsApp' className='w-8 h-8 rounded-full'/></a>
+              </div>
+          
             </div>
           </div>
 

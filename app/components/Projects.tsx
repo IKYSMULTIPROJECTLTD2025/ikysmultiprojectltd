@@ -18,7 +18,7 @@ interface Project {
 
 const PROJECTS_DATA: Project[] = [
   {
-    id: 'p1', name: 'IKYS Grand Crown Waterfront ', category: 'Commercial', status: 'Completed', date: '2023',
+    id: 'p1', name: 'IKYS Grand Crown Waterfront Hotel & Resort ', category: 'Commercial', status: 'Completed', date: '2023',
     description: `   The IKYS Grand Crown Waterfront Hotel & Resort is a proposed world-class five-star 
     hospitality destination designed to become an iconic landmark for luxury tourism, international conferences, 
     and high-end business travel. Strategically located along a premium waterfront, the development integrates iconic 

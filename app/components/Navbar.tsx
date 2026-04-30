@@ -2,6 +2,7 @@
 import { Building, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from "next/image";
 
 export const Navbar = ({ route }: { route: string, }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,9 @@ export const Navbar = ({ route }: { route: string, }) => {
        
           <a href={'#home'}>
           <div className="cursor-pointer flex items-center">
-            <Building className={`w-8 h-8 mr-2 ${isDarkBg ? 'text-amber-500' : 'text-amber-600'}`} />
+            {/* <Building className={`w-8 h-8 mr-2 ${isDarkBg ? 'text-amber-500' : 'text-amber-600'}`} /> */}
+             <Image src={'/projects/logo.png'} width={50} height={80}  alt='logo'  
+                         className={`w-12 h-12 mr-2 rounded ${isDarkBg ? 'border-2 border-amber-500' : 'border-2 border-amber-600'}`}/>
             <div>
               <h1 className={`text-xl font-extrabold tracking-widest uppercase leading-none ${logoColorClass}`}>IKYS</h1>
               <span className={`text-[0.65rem] font-bold tracking-[0.3em] uppercase 

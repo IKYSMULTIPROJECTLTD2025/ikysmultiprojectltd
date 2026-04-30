@@ -48,7 +48,7 @@ export default function App() {
     { id: 'home', icon: HomeIcon, label: 'Home', href: '#' },
     { id: 'about', icon:  UsersIcon, label: 'About', href: '#about' },
     { id: 'services', icon: Globe, label: 'Services', href: '#services' },
-    { id: 'process', icon: GroupIcon , label: 'Process', href: '#process' },
+  //  { id: 'process', icon: GroupIcon , label: 'Process', href: '#process' },
     { id: 'projects', icon: Building, label: 'Projects', href: '#projects' },
     { id: 'contact', icon: Mail, label: 'Contact', href: '#contact' },
   ];
