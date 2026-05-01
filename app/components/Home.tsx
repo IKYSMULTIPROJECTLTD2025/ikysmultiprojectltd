@@ -57,7 +57,7 @@ const PROJECTS_DATA: Project[] = [
     
   },
   {
-    id: 'p3', name: 'Industrial Park', category: 'Industrial', status: 'Planned', date: '2026',
+    id: 'p3', name: 'Proposed Development of a 3-star hotel', category: 'Commercial', status: 'Planned', date: '2026',
     description: 'A comprehensive 50-hectare industrial zone designed for optimal logistics and manufacturing efficiency.',
     image:'/images/industry.png'
 

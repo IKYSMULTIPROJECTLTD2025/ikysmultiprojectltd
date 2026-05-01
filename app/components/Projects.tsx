@@ -10,7 +10,7 @@ interface Project {
   id: string;
   name: string;
   category: 'Commercial' | 'Residential' | 'Industrial' | 'Public';
-  status: 'Completed' | 'Ongoing' | 'Planned';
+  status: 'Completed' | 'Ongoing' | 'Planned' | 'Proposed';
   date: string;
   description: string;
   images: string[];
@@ -18,7 +18,7 @@ interface Project {
 
 const PROJECTS_DATA: Project[] = [
   {
-    id: 'p1', name: 'IKYS Grand Crown Waterfront Hotel & Resort ', category: 'Commercial', status: 'Completed', date: '2023',
+    id: 'p1', name: 'IKYS Grand Crown Waterfront Hotel & Resort ', category: 'Commercial', status: 'Proposed', date: '2026',
     description: `   The IKYS Grand Crown Waterfront Hotel & Resort is a proposed world-class five-star 
     hospitality destination designed to become an iconic landmark for luxury tourism, international conferences, 
     and high-end business travel. Strategically located along a premium waterfront, the development integrates iconic 
@@ -35,7 +35,7 @@ const PROJECTS_DATA: Project[] = [
   },
 
   {
-    id: 'p2', name: 'Luxury Residences', category: 'Residential', status: 'Ongoing', date: '2025',
+    id: 'p2', name: 'Luxury Residences', category: 'Residential', status: 'compled', date: '2024',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro01.png', 
@@ -59,14 +59,28 @@ const PROJECTS_DATA: Project[] = [
   },
 
   {
-    id: 'p4', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2022',
-    description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
+    id: 'p4', name: 'PROPOSED MIXED-USE DEVELOPMENT', category: 'Residential', status: 'Proposed', date: '2026',
+    description: 
+    `Project Overview:
+
+     The proposed development is a mixed-use facility designed to integrate multiple complementary functions within a 
+     single, well-organized environment. The project combines commercial, educational, residential, and religious 
+     spaces, creating a vibrant and self-sustaining hub that serves diverse community needs.
+
+     The development will include a restaurant, painting/printing press, computer training centre, residential 
+     rest rooms (bedrooms), and a mosque, all carefully planned to ensure functionality, accessibility, and harmony 
+     between uses.
+
+     The proposed mixed-use development offers a holistic approach to urban and community planning, combining essential 
+     services and functions within a single development. It is designed to be practical, sustainable, and economically viable, 
+     while meeting the social and cultural needs of its users.`,
+
     images: [
       'projects/pro11.png'
       ]
   },
   {
-    id: 'p5', name: 'Luxury Residences', category: 'Residential', status: 'Ongoing', date: '2024',
+    id: 'p5', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2024',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro12.png', 
@@ -76,7 +90,7 @@ const PROJECTS_DATA: Project[] = [
     ]
   },
   {
-    id: 'p6', name: 'Public School', category: 'Public', status: 'Completed', date: '2021',
+    id: 'p6', name: 'Public School', category: 'Public', status: 'Proposed', date: '2026',
     description: 'A culturally significant public building that blends traditional Nigerian architectural motifs with contemporary materials.',
     images: [
       'projects/pro17.png', 
@@ -84,7 +98,7 @@ const PROJECTS_DATA: Project[] = [
      ]
   },
   {
-    id: 'p7', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
+    id: 'p7', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2023',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro18.png'
@@ -92,7 +106,7 @@ const PROJECTS_DATA: Project[] = [
      ]
   },
     {
-    id: 'p8', name:'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
+    id: 'p8', name:'Children’s Day Care Center', category: 'Residential', status: 'Completed', date: '2021',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro19.png', 
@@ -100,23 +114,36 @@ const PROJECTS_DATA: Project[] = [
      ]
   },
      {
-    id: 'p9', name:'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
-    description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
+    id: 'p9', name:'Royal Palace Residence', category: 'Residential', status: 'Completed', date: '2023',
+    description: `
+
+        The IKYS Royal Palace Residence is a luxury residential development inspired by the rich heritage of 
+        Northern Nigerian and Islamic architecture, drawing influence from iconic traditional complexes such 
+        as the Emir of Kano’s Palace. The project expresses a bold fusion of culture, prestige, and modern 
+        comfort—carefully tailored for high-profile clients who value identity, privacy, and refined living.
+
+    `,
     images: [
       'projects/pro21.png', 
       'projects/pro22.png'
      ]
   },
       {
-    id: 'p10', name: 'Main Office Headquarters', category: 'Industrial', status: 'Completed', date: '2021',
-    description: 'Headquarters for a leading financial institution, emphasizing security, transparency, and corporate prestige.',
+    id: 'p10', name: 'Proposed Development of a 3-star  hotel', category: 'Commercial', status: 'Proposed', date: '2026',
+    description: `
+    Project Overview: 
+
+        The proposed development entails the design and construction of a modern 3-star hotel facility aimed at delivering safe, 
+         comfortable, and efficient hospitality services. The project is conceived to meet the growing demand for mid-range 
+         accommodation while maintaining high standards of functionality and user satisfaction.`,
+
     images: [
       'projects/pro23.png'
       
      ]
   },
       {
-    id: 'p11', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
+    id: 'p11', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2025',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro24.png'
@@ -124,7 +151,7 @@ const PROJECTS_DATA: Project[] = [
      ]
   },
       {
-    id: 'p12', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
+    id: 'p12', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2025',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro25.png'
@@ -132,7 +159,7 @@ const PROJECTS_DATA: Project[] = [
      ]
   },
   {
-    id: 'p13', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
+    id: 'p13', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2025',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro26.jpg'
@@ -140,7 +167,7 @@ const PROJECTS_DATA: Project[] = [
      ]
   },
   {
-    id: 'p14', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
+    id: 'p14', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2025',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro27.jpg'
@@ -148,7 +175,7 @@ const PROJECTS_DATA: Project[] = [
      ]
   },
   {
-    id: 'p15', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2021',
+    id: 'p15', name: 'Luxury Residences', category: 'Residential', status: 'Ongoing', date: '2026',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro28.jpg',

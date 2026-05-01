@@ -26,7 +26,7 @@ export const About = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <SectionTitle title="About IKYS" subtitle="Our Story" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-             <Image src={'/projects/logo2.png'} width={500} height={800}  alt='Company Office / Team'  
+             <Image src={'/images/about-team.png'} width={500} height={800}  alt='Company Office / Team'  
              className='w-full rounded-lg p- border-2 border-neutral-300 shadow-2xl'/>
             <div className="text-lg text-neutral-600 leading-relaxed space-y-6">
               <p>
@@ -55,7 +55,7 @@ export const About = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="w-full md:w-1/3">
-               <Image src={'/images/imran.png'} width={500} height={800}  alt='"CEO Portrait'  
+               <Image src={'/images/about-ceo.png'} width={500} height={800}  alt='"CEO Portrait'  
              className='rounded-t-full shadow-2xl'/>
             </div>
             <div className="w-full md:w-2/3">
