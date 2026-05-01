@@ -95,8 +95,7 @@ export const About = () => {
               <div className="border-l-4 border-amber-500 pl-8">
                 <h3 className="text-3xl font-extrabold mb-6">Our Mission</h3>
                 <p className="text-xl text-neutral-300 font-light leading-relaxed">
-                  {/* {COMPANY_INFO.mission} */}
-                  
+               
                <Image src={'/projects/mission.png'} width={500} height={800}  alt='Company'  
                            className='w-full h-full'/>
                 </p>
@@ -106,8 +105,7 @@ export const About = () => {
               <div className="border-l-4 border-amber-500 pl-8">
                 <h3 className="text-3xl font-extrabold mb-6">Our Vision</h3>
                 <p className="text-xl text-neutral-300 font-light leading-relaxed">
-                  {/* {COMPANY_INFO.vision} */}
-                  
+                 
                <Image src={'/projects/vision.png'} width={500} height={800}  alt='Company'  
                            className='w-full h-full'/>
                 </p>

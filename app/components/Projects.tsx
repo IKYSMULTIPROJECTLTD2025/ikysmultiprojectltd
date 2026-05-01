@@ -35,7 +35,7 @@ const PROJECTS_DATA: Project[] = [
   },
 
   {
-    id: 'p2', name: 'Luxury Residences', category: 'Residential', status: 'compled', date: '2024',
+    id: 'p2', name: 'Luxury Residences', category: 'Residential', status:'Completed', date: '2024',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro01.png', 
