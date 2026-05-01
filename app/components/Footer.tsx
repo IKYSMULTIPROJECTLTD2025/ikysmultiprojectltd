@@ -14,7 +14,7 @@ const COMPANY_INFO = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-neutral-950 text-neutral-300 pt-12 pb-10 border-t border-neutral-900">
+    <footer className="bg-neutral-950 text-neutral-300 pt-12 pb-24 border-t border-neutral-900">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
@@ -57,14 +57,6 @@ export const Footer = () => {
                 <Image src={'/images/instagram.png'} width={50} height={800}  
                 alt='Instagram' className='w-8 h-8 rounded-full'/></a>
               </div>
-          
-              {/* <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
-                hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
-                <a href={'https://x.com/@ikysmulti_projectltd'} 
-                target="_blank" rel="noopener noreferrer">
-                <Image src={'/images/twitter.png'} width={50} height={800}  
-                alt='Twitter' className='w-8 h-8 rounded-full'/></a>
-              </div> */}
             
               <div className="w-10 h-10 rounded bg-neutral-900 flex items-center justify-center 
                 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
@@ -101,9 +93,6 @@ export const Footer = () => {
 
               <a href={'#process'}><li><button 
               className="hover:text-amber-500 transition-colors">Our Process</button></li></a>
-
-             {/* <a href={'#home'}> <li><button 
-              className="hover:text-amber-500 transition-colors">Licenses & Certifications</button></li></a> */}
 
             </ul>
           </div>
@@ -144,7 +133,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-neutral-900 text-center text-xs text-neutral-300 flex flex-col md:flex-row justify-between items-center">
+        <div className="pt-8 border-t border-neutral-900 text-center text-xs text-neutral-300 flex 
+        flex-col md:flex-row justify-between items-center">
           <p>&copy; {new Date().getFullYear()} IKYS Multi Project Ltd. All rights reserved.</p>
           <p className="mt-2 md:mt-0">Designed & Engineered for Production.</p>
         </div>
