@@ -35,8 +35,8 @@ const PROJECTS_DATA: Project[] = [
   },
 
   {
-    id: 'p2', name: 'Luxury Residences', category: 'Residential', status:'Completed', date: '2024',
-    description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
+    id: 'p2', name: 'Mixed-use Development', category: 'Commercial', status:'Completed', date: '2024',
+    description: 'Premium Mixed-use Development with modern minimalist aesthetics and private marina access.',
     images: [
       'projects/pro01.png', 
       'projects/pro02.png'
@@ -170,7 +170,9 @@ const PROJECTS_DATA: Project[] = [
     id: 'p14', name: 'Luxury Residences', category: 'Residential', status: 'Completed', date: '2025',
     description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
     images: [
-      'projects/pro27.jpg'
+      'projects/pro70.jpg',
+      'projects/pro71.jpg',
+      'projects/pro72.jpg'
     
      ]
   },
@@ -181,6 +183,67 @@ const PROJECTS_DATA: Project[] = [
       'projects/pro28.jpg',
       'projects/pro29.jpg',
       'projects/pro30.jpg'
+    
+     ]
+  },
+  //////////////////
+    {
+    id: 'p16', name: 'Proposed Five Bedroom Duplex', category: 'Residential', status: 'Ongoing', date: '2025',
+    description: 'Premium Proposed five bedroom duplex with modern minimalist aesthetics and private marina access.',
+    images: [
+      'projects/pro31.jpg',
+      'projects/pro32.jpg',
+      'projects/pro33.jpg',
+      'projects/pro34.jpg',
+      'projects/pro35.jpg',
+      'projects/pro36.jpg',
+      'projects/pro37.jpg',
+      'projects/pro38.jpg',
+      'projects/pro39.jpg',
+      'projects/pro40.jpg',
+      'projects/pro41.jpg',
+      'projects/pro42.jpg',
+      'projects/pro43.jpg',
+      'projects/pro44.jpg',
+      'projects/pro45.jpg'
+    
+     ]
+  },
+    {
+    id: 'p17', name: 'Luxury Residential Development', category: 'Residential', status: 'Ongoing', date: '2025',
+    description: 'Premium residential building with modern minimalist aesthetics and private marina access.',
+    images: [
+      'projects/pro46.jpg',
+      'projects/pro47.jpg',
+      'projects/pro48.jpg',
+      'projects/pro49.jpg',
+      'projects/pro50.jpg',
+      'projects/pro51.jpg',
+      'projects/pro52.jpg',
+      'projects/pro53.jpg',
+      'projects/pro54.jpg',
+      'projects/pro55.jpg',
+      'projects/pro56.jpg',
+      'projects/pro57.jpg',
+      'projects/pro58.jpg'
+    
+     ]
+  },
+    {
+    id: 'p18', name: 'Proposed Mixed-Use Development ', category: 'Commercial', status: 'Ongoing', date: '2025',
+    description: 'Premium proposed mixed-use development with modern minimalist aesthetics and private marina access.',
+    images: [
+      'projects/pro59.jpg',
+      'projects/pro60.jpg',
+      'projects/pro61.jpg',
+      'projects/pro62.jpg',
+      'projects/pro63.jpg',
+      'projects/pro64.jpg',
+      'projects/pro65.jpg',
+      'projects/pro66.jpg',
+      'projects/pro67.jpg',
+      'projects/pro68.jpg',
+      'projects/pro69.jpg'
     
      ]
   },
